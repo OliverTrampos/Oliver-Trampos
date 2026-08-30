@@ -8,59 +8,120 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #0b0b0b;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #16233a 0%, #080808 45%, #000 100%);
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
 
     .container {
-      width: 90%;
-      max-width: 420px;
-      text-align: center;
+      width: 100%;
+      max-width: 430px;
+      background: rgba(20, 20, 20, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
       padding: 35px 25px;
-      background: #151515;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(255, 170, 0, 0.15);
+      text-align: center;
+      box-shadow: 0 0 45px rgba(255, 140, 0, 0.12);
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff8a00, #ff3d00);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px;
+      box-shadow: 0 0 25px rgba(255, 120, 0, 0.35);
     }
 
     h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: 800;
     }
 
-    p {
-      color: #bdbdbd;
-      margin-bottom: 30px;
+    .usuario {
+      color: #aaa;
+      font-size: 16px;
+      margin-bottom: 25px;
     }
 
-    .telegram {
+    .descricao {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #ddd;
+      margin-bottom: 28px;
+    }
+
+    .info {
+      background: #111;
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 20px;
+      border: 1px solid #252525;
+    }
+
+    .info strong {
       display: block;
-      padding: 17px;
-      border-radius: 12px;
-      background: #229ED9;
-      color: white;
-      text-decoration: none;
       font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .info span {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .botao {
+      display: block;
+      width: 100%;
+      padding: 17px;
+      margin-top: 14px;
+      border-radius: 13px;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
       transition: 0.2s;
     }
 
-    .telegram:hover {
-      transform: scale(1.03);
+    .telegram {
+      background: #229ED9;
+      color: white;
     }
 
-    .aviso {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #777;
+    .telegram:hover {
+      transform: scale(1.02);
+      background: #168ac0;
+    }
+
+    .perfil {
+      background: #242424;
+      color: white;
+      border: 1px solid #333;
+    }
+
+    .perfil:hover {
+      background: #303030;
+    }
+
+    .rodape {
+      margin-top: 25px;
+      color: #666;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -68,17 +129,47 @@
 <body>
 
   <div class="container">
-    <h1>🔥 Oliver Trampos</h1>
 
-    <p>Entre no nosso grupo e fique por dentro das novidades.</p>
+    <div class="logo">
+      🔥
+    </div>
 
-    <a class="telegram" href="https://t.me/+Q78LEFowN5RjOWVh" target="_blank">
+    <h1>Oliver Trampos</h1>
+
+    <div class="usuario">
+      @Olivertrampos
+    </div>
+
+    <div class="descricao">
+      Entre na nossa conexão e fique por dentro
+      das novidades e oportunidades.
+    </div>
+
+    <div class="info">
+      <strong>🚀 Conexão Oliver Trampos</strong>
+      <span>Grupo oficial no Telegram</span>
+    </div>
+
+    <a
+      class="botao telegram"
+      href="https://t.me/+Q78LEFoWN5RjOWVh"
+      target="_blank"
+    >
       🚀 ENTRAR NO GRUPO DO TELEGRAM
     </a>
 
-    <div class="aviso">
-      Acesso pelo Telegram
+    <a
+      class="botao perfil"
+      href="https://t.me/Olivertrampos"
+      target="_blank"
+    >
+      👤 ACESSAR @Olivertrampos
+    </a>
+
+    <div class="rodape">
+      © 2026 Oliver Trampos
     </div>
+
   </div>
 
 </body>
