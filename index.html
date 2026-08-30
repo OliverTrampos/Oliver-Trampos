@@ -19,65 +19,53 @@
         radial-gradient(circle at top, #16233a 0%, #080808 45%, #000 100%);
       color: white;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       padding: 20px;
     }
 
     .container {
       width: 100%;
-      max-width: 430px;
+      max-width: 440px;
       background: rgba(20, 20, 20, 0.96);
-      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 24px;
       padding: 35px 25px;
       text-align: center;
-      box-shadow: 0 0 45px rgba(255, 140, 0, 0.12);
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      margin: 0 auto 18px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #ff8a00, #ff3d00);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 45px;
-      box-shadow: 0 0 25px rgba(255, 120, 0, 0.35);
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 3px solid #229ED9;
     }
 
     h1 {
       font-size: 30px;
-      margin-bottom: 10px;
-      font-weight: 800;
-    }
-
-    .usuario {
-      color: #aaa;
-      font-size: 16px;
-      margin-bottom: 25px;
+      margin-bottom: 12px;
     }
 
     .descricao {
-      font-size: 17px;
+      color: #bdbdbd;
+      font-size: 16px;
       line-height: 1.5;
-      color: #ddd;
       margin-bottom: 28px;
     }
 
     .info {
-      background: #111;
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 15px;
       padding: 18px;
-      margin-bottom: 20px;
-      border: 1px solid #252525;
+      margin-bottom: 25px;
     }
 
     .info strong {
       display: block;
-      font-size: 18px;
+      font-size: 19px;
       margin-bottom: 7px;
     }
 
@@ -90,8 +78,8 @@
       display: block;
       width: 100%;
       padding: 17px;
-      margin-top: 14px;
-      border-radius: 13px;
+      margin: 14px 0;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
@@ -103,42 +91,43 @@
       color: white;
     }
 
-    .telegram:hover {
-      transform: scale(1.02);
-      background: #168ac0;
-    }
-
     .perfil {
-      background: #242424;
+      background: transparent;
       color: white;
-      border: 1px solid #333;
+      border: 1px solid #444;
     }
 
-    .perfil:hover {
-      background: #303030;
+    .botao:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
     }
 
     .rodape {
       margin-top: 25px;
       color: #666;
-      font-size: 12px;
+      font-size: 13px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <main class="container">
 
-    <div class="logo">
+    <div class="logo"
+      style="
+        margin-left:auto;
+        margin-right:auto;
+        background: linear-gradient(135deg, #229ED9, #1769aa);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:42px;
+      ">
       🔥
     </div>
 
     <h1>Oliver Trampos</h1>
-
-    <div class="usuario">
-      @Olivertrampos
-    </div>
 
     <div class="descricao">
       Entre na nossa conexão e fique por dentro
@@ -146,7 +135,7 @@
     </div>
 
     <div class="info">
-      <strong>🚀 Conexão Oliver Trampos</strong>
+      <strong>Conexão Oliver Trampos</strong>
       <span>Grupo oficial no Telegram</span>
     </div>
 
@@ -154,7 +143,7 @@
       class="botao telegram"
       href="https://t.me/+Q78LEFowN5RjOWVh"
       target="_blank"
-    >
+      rel="noopener noreferrer">
       🚀 ENTRAR NO GRUPO DO TELEGRAM
     </a>
 
@@ -162,7 +151,7 @@
       class="botao perfil"
       href="https://t.me/Olivertrampos"
       target="_blank"
-    >
+      rel="noopener noreferrer">
       👤 ACESSAR @Olivertrampos
     </a>
 
@@ -170,7 +159,7 @@
       © 2026 Oliver Trampos
     </div>
 
-  </div>
+  </main>
 
 </body>
 </html>
